@@ -6,6 +6,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Tube from "../../assets/3dtube.png";
 import Cone from "../../assets/3dtriangle.png";
 import Capsule from "../../assets/3dcapsule.png";
+import design from "../../assets/Design.svg"
+import develope from "../../assets/Develope.svg"
+import support from "../../assets/Support.svg"
 
 import TextBlock from "../../components/TextBlock";
 import SvgBlock from "../../components/SvgBlock";
@@ -55,7 +58,7 @@ const Title = styled.h1`
     bottom: 0;
     transform: translate(-50%, 0.5rem);
     /* or 100px */
-    border-bottom: 2px solid var(--pink);
+    border-bottom: 2px solid black;
   }
 `;
 
@@ -69,8 +72,8 @@ const Line = styled.span`
 const Triangle = styled.span`
   width: 0;
   height: 0;
-  border-left: 1.2rem solid transparent;
-  border-right: 1.2rem solid transparent;
+  border-left: 1.2rem solid black;
+  border-right: 1.2rem solid black;
   border-top: 2rem solid #15ddd3;
 `;
 
@@ -113,199 +116,214 @@ const OBJ = styled.div`
   }
 `;
 
+const OB = styled.div`
+  position: absolute;
+  top:100px;
+  right:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  /* z-index: 1; */
+
+  @media only Screen and (max-width: 48em) {
+    opacity: 0.5;
+  }
+`;
+
 const Services = () => {
   const ref = useRef(null);
   gsap.registerPlugin(ScrollTrigger);
   const revealRefs = useRef([]);
   revealRefs.current = [];
 
-  useEffect(() => {
-    const element = ref.current;
-    ////
-    const mq = window.matchMedia("(max-width: 48em)");
-    const t1 = gsap.timeline({
-      scrollTrigger: {
-        trigger: document.getElementById("services"),
-        start: "top top+=180",
-        end: "bottom bottom",
+  // useEffect(() => {
+  //   const element = ref.current;
+  //   ////
+  //   const mq = window.matchMedia("(max-width: 48em)");
+  //   const t1 = gsap.timeline({
+  //     scrollTrigger: {
+  //       trigger: document.getElementById("services"),
+  //       start: "top top+=180",
+  //       end: "bottom bottom",
 
-        pin: element,
-        pinReparent: true,
-      },
-    });
-    t1.fromTo(
-      document.getElementById("line"),
+  //       pin: element,
+  //       pinReparent: true,
+  //     },
+  //   });
+  //   t1.fromTo(
+  //     document.getElementById("line"),
 
-      {
-        height: "15rem",
-      },
-      {
-        height: "3rem",
-        duration: 2,
-        scrollTrigger: {
-          trigger: document.getElementById("line"),
-          start: "top top+=200",
-          end: "bottom top+=220",
-          scrub: true,
-        },
-      }
-    );
+  //     {
+  //       height: "15rem",
+  //     },
+  //     {
+  //       height: "3rem",
+  //       duration: 2,
+  //       scrollTrigger: {
+  //         trigger: document.getElementById("line"),
+  //         start: "top top+=200",
+  //         end: "bottom top+=220",
+  //         scrub: true,
+  //       },
+  //     }
+  //   );
 
-    revealRefs.current.forEach((el, index) => {
-      // console.log(el.childNodes);
-      if (mq.matches) {
-        t1.from(
-          el.childNodes[0],
+  //   revealRefs.current.forEach((el, index) => {
+  //     // console.log(el.childNodes);
+  //     if (mq.matches) {
+  //       t1.from(
+  //         el.childNodes[0],
 
-          {
-            x: -300,
-            opacity: 0,
-            duration: 2,
+  //         {
+  //           x: -300,
+  //           opacity: 0,
+  //           duration: 2,
 
-            ease: "power2",
-            scrollTrigger: {
-              id: `section-${index + 1}`,
-              trigger: el,
-              start: "top center+=200",
-              end: "bottom bottom-=100",
-              scrub: true,
-              snap: true,
-              //
-              // toggleActions: "play none none reverse",
-            },
-          }
-        )
-          .to(el.childNodes[1], {
-            transform: "scale(0)",
+  //           ease: "power2",
+  //           scrollTrigger: {
+  //             id: `section-${index + 1}`,
+  //             trigger: el,
+  //             start: "top center+=200",
+  //             end: "bottom bottom-=100",
+  //             scrub: true,
+  //             snap: true,
+  //             //
+  //             // toggleActions: "play none none reverse",
+  //           },
+  //         }
+  //       )
+  //         .to(el.childNodes[1], {
+  //           transform: "scale(0)",
 
-            ease: "power2.inOut",
+  //           ease: "power2.inOut",
 
-            scrollTrigger: {
-              id: `section-${index + 1}`,
-              trigger: el.childNodes[1],
-              start: "top center",
-              end: "bottom center",
-              scrub: true,
-              snap: true,
+  //           scrollTrigger: {
+  //             id: `section-${index + 1}`,
+  //             trigger: el.childNodes[1],
+  //             start: "top center",
+  //             end: "bottom center",
+  //             scrub: true,
+  //             snap: true,
 
-              // toggleActions: "play none none reverse",
-            },
-          })
-          .from(
-            el.childNodes[2],
+  //             // toggleActions: "play none none reverse",
+  //           },
+  //         })
+  //         .from(
+  //           el.childNodes[2],
 
-            {
-              y: 400,
+  //           {
+  //             y: 400,
 
-              duration: 2,
+  //             duration: 2,
 
-              ease: "power2",
-              scrollTrigger: {
-                id: `section-${index + 1}`,
-                trigger: el,
-                start: "top center+=100",
-                end: "bottom bottom-=200",
-                scrub: true,
-                snap: true,
-                //
-                // toggleActions: "play none none reverse",
-              },
-            }
-          )
-          .to(
-            el,
+  //             ease: "power2",
+  //             scrollTrigger: {
+  //               id: `section-${index + 1}`,
+  //               trigger: el,
+  //               start: "top center+=100",
+  //               end: "bottom bottom-=200",
+  //               scrub: true,
+  //               snap: true,
+  //               //
+  //               // toggleActions: "play none none reverse",
+  //             },
+  //           }
+  //         )
+  //         .to(
+  //           el,
 
-            {
-              opacity: 0,
+  //           {
+  //             opacity: 0,
 
-              ease: "power2",
-              scrollTrigger: {
-                id: `section-${index + 1}`,
-                trigger: el,
-                start: "top top+=300",
-                end: "center top+=300",
-                scrub: true,
-              },
-            }
-          );
-      } else {
-        t1.from(
-          el.childNodes[0],
+  //             ease: "power2",
+  //             scrollTrigger: {
+  //               id: `section-${index + 1}`,
+  //               trigger: el,
+  //               start: "top top+=300",
+  //               end: "center top+=300",
+  //               scrub: true,
+  //             },
+  //           }
+  //         );
+  //     } else {
+  //       t1.from(
+  //         el.childNodes[0],
 
-          {
-            x: -300,
-            opacity: 0,
-            duration: 2,
+  //         {
+  //           x: -300,
+  //           opacity: 0,
+  //           duration: 2,
 
-            ease: "power2",
-            scrollTrigger: {
-              id: `section-${index + 1}`,
-              trigger: el,
-              start: "top center+=100",
-              end: "bottom bottom-=200",
-              scrub: true,
-              snap: true,
-              //
-              // toggleActions: "play none none reverse",
-            },
-          }
-        )
-          .to(el.childNodes[1], {
-            transform: "scale(0)",
+  //           ease: "power2",
+  //           scrollTrigger: {
+  //             id: `section-${index + 1}`,
+  //             trigger: el,
+  //             start: "top center+=100",
+  //             end: "bottom bottom-=200",
+  //             scrub: true,
+  //             snap: true,
+  //             //
+  //             // toggleActions: "play none none reverse",
+  //           },
+  //         }
+  //       )
+  //         .to(el.childNodes[1], {
+  //           transform: "scale(0)",
 
-            ease: "power2.inOut",
+  //           ease: "power2.inOut",
 
-            scrollTrigger: {
-              id: `section-${index + 1}`,
-              trigger: el.childNodes[1],
-              start: "top center",
-              end: "bottom center",
-              scrub: true,
-              snap: true,
+  //           scrollTrigger: {
+  //             id: `section-${index + 1}`,
+  //             trigger: el.childNodes[1],
+  //             start: "top center",
+  //             end: "bottom center",
+  //             scrub: true,
+  //             snap: true,
 
-              // toggleActions: "play none none reverse",
-            },
-          })
-          .from(
-            el.childNodes[2],
+  //             // toggleActions: "play none none reverse",
+  //           },
+  //         })
+  //         .from(
+  //           el.childNodes[2],
 
-            {
-              y: 400,
+  //           {
+  //             y: 400,
 
-              duration: 2,
+  //             duration: 2,
 
-              ease: "power2",
-              scrollTrigger: {
-                id: `section-${index + 1}`,
-                trigger: el,
-                start: "top center+=100",
-                end: "bottom bottom-=200",
-                scrub: true,
-                snap: true,
-                //
-                // toggleActions: "play none none reverse",
-              },
-            }
-          )
-          .to(
-            el,
+  //             ease: "power2",
+  //             scrollTrigger: {
+  //               id: `section-${index + 1}`,
+  //               trigger: el,
+  //               start: "top center+=100",
+  //               end: "bottom bottom-=200",
+  //               scrub: true,
+  //               snap: true,
+  //               //
+  //               // toggleActions: "play none none reverse",
+  //             },
+  //           }
+  //         )
+  //         .to(
+  //           el,
 
-            {
-              opacity: 0,
+  //           {
+  //             opacity: 0,
 
-              ease: "power2",
-              scrollTrigger: {
-                id: `section-${index + 1}`,
-                trigger: el,
-                start: "top top+=200",
-                end: "center top+=300",
-                scrub: true,
-              },
-            }
-          );
-      }
-    });
-  }, []);
+  //             ease: "power2",
+  //             scrollTrigger: {
+  //               id: `section-${index + 1}`,
+  //               trigger: el,
+  //               start: "top top+=200",
+  //               end: "center top+=300",
+  //               scrub: true,
+  //             },
+  //           }
+  //         );
+  //     }
+  //   });
+  // }, []);
 
   const addToRefs = (el) => {
     if (el && !revealRefs.current.includes(el)) {
@@ -320,7 +338,7 @@ const Services = () => {
         <Triangle id="triangle" />
       </Background>
 
-      {/* <Content ref={addToRefs}>
+      <Content ref={addToRefs}>
         <TextBlock
           topic="Design"
           title={<h1>We build award winning Designs</h1>}
@@ -330,12 +348,13 @@ const Services = () => {
             </h5>
           }
         />
-        <OBJ>
-          <img src={Tube} alt="Tube Object" width="400" height="400" />
-        </OBJ>
-        <SvgBlock svg="Design.svg" />
-      </Content> */}
-      {/* <Content ref={addToRefs}>
+       
+        {/* <SvgBlock svg="Design.svg" /> */}
+        <OB>
+          <img src={design} alt="Tube Object" width="400" height="400" />
+        </OB>
+      </Content>
+      <Content ref={addToRefs}>
         <TextBlock
           topic="Develop"
           title={<h1>We Develope high quality Web & App</h1>}
@@ -346,12 +365,12 @@ const Services = () => {
             </h5>
           }
         />
-        <OBJ>
-          <img src={Cone} alt="Cone Object" width="400" height="400" />
-        </OBJ>
-        <SvgBlock svg="Develope.svg" />
-      </Content> */}
-      {/* <Content>
+       
+        <OB>
+          <img src={develope} alt="Cone Object" width="400" height="400" />
+        </OB>
+      </Content>
+      <Content>
         <TextBlock
           topic="Support"
           title={<h1>We provide support for your digital presence</h1>}
@@ -363,11 +382,11 @@ const Services = () => {
             </h5>
           }
         />
-        <OBJ>
-          <img src={Capsule} alt="Capsule Object" width="400" height="400" />
-        </OBJ>
-        <SvgBlock svg="Support.svg" />
-      </Content> */}
+       
+        <OB>
+          <img src={support} alt="Cone Object" width="400" height="400" />
+        </OB>
+      </Content>
     </ServiceSection>
   );
 };
