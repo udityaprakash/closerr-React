@@ -1,114 +1,79 @@
-import React, { lazy } from "react";
-import styled from "styled-components";
-
-import Slider from "react-slick";
-import "../../../node_modules/slick-carousel/slick/slick.css";
-import "../../../node_modules/slick-carousel/slick/slick-theme.css";
-
-const Card = lazy(() => import("../../components/Card/index"));
-
-const Section = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 5rem 0;
-`;
-
-const Title = styled.h1`
-  color: #0a0b10;
-  display: inline-block;
-  font-size: calc(1rem + 1.5vw);
-  margin-top: 1.5rem;
-  position: relative;
-  &::before {
-    content: "";
-    height: 1px;
-    width: 50%;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translate(-50%, 0.5rem);
-    /* or 100px */
-    border-bottom: 2px solid var(--purple);
-  }
-`;
-
-const Carousal = styled.div`
-  width: 50vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  @media only Screen and (max-width: 40em) {
-    width: 90vw;
-    .slick-slider .slick-arrow {
-      display: none;
-    }
-  }
-  .slick-slider .slick-arrow:before {
-    color: #0a0b10;
-    font-size: 1.5rem;
-    @media only Screen and (max-width: 40em) {
-      display: none;
-    }
-  }
-  .slick-slider .slick-dots button:before {
-    color: #0a0b10;
-    font-size: 1.5rem;
-  }
-  .slick-slide.slick-active {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 3rem;
-  }
-`;
+import React from "react";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import "./styles.css"; 
 
 const Testimonials = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-
-    speed: 1000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
-
   return (
-    <Section>
-      <Title>Few good words about us!</Title>
-      <Carousal>
-        <Slider {...settings}>
-          <Card
-            text="Closer is an innovative startup in the online social media and networking industry, It was designed and developed by MAVI TECHNOLOGIES PVT LTD . Our app uses location-based technology to connect users who are nearby or have crossed paths in real life ."
-            name="Lorem"
-            image="avatar-1"
-          />
+    <>
+    <Carousel
+      showArrows={false}
+      infiniteLoop={true}
+      showThumbs={false}
+      showStatus={false}
+      autoPlay={true}
+      interval={2000}
+    >
+        <div>
+          <img src="https://th.bing.com/th/id/OIP.GBzmVgh2QaeYprivEE65dAAAAA?pid=ImgDet&w=177&h=177&c=7&dpr=1.3"  alt="abg"/>
+          <div className="myCarousel">
+            <h3>Daniel Keystone</h3>
+            <h4>Designer</h4>
+            <p>
+              The simple and intuitive design makes it easy for me use. I highly
+              recommend Fetch to my peers.
+            </p>
+          </div>
+        </div>
 
-          <Card
-            text="Closer is an innovative startup in the online social media and networking industry, It was designed and developed by MAVI TECHNOLOGIES PVT LTD . Our app uses location-based technology to connect users who are nearby or have crossed paths in real life ."
-            name="Lorem"
-            image="avatar-2"
-          />
+        <div>
+          <img src="https://th.bing.com/th/id/OIP.hnrQOIdtrBeuyiC27bVZmQAAAA?pid=ImgDet&w=177&h=177&c=7&dpr=1.3" alt="abg"/>
+          <div className="myCarousel">
+            <h3>Theo Sorel</h3>
+            <h4>Fontend Developer </h4>
+            <p>
+              I enjoy catching up with Fetch on my laptop, or on my phone when
+              I'm on the go!
+            </p>
+          </div>
+        </div>
+        <div>
+          <img src="https://th.bing.com/th?id=OIP.UkTBowRhbbhym0TupnXktgHaE7&w=306&h=203&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="abg"/>
+          <div className="myCarousel">
+            <h3>Shirley Fultz</h3>
+            <h4>Frontend Developer</h4>
+            <p>
+              It's freeing to be able to catch up on customized news and not be
+              distracted by a social media element on the same site
+            </p>
+          </div>
+        </div>
 
-          <Card
-            text="Closer is an innovative startup in the online social media and networking industry, It was designed and developed by MAVI TECHNOLOGIES PVT LTD . Our app uses location-based technology to connect users who are nearby or have crossed paths in real life ."
-            name="Lorem"
-            image="avatar-3"
-          />
+        <div>
+          <img src="https://th.bing.com/th?id=OIP.PlmU4CkadPFONP2jfjfSLwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="abg"/>
+          <div className="myCarousel">
+            <h3>Daniel Keystone</h3>
+            <h4>Backend Developer</h4>
+            <p>
+              The simple and intuitive design makes it easy for me use. I highly
+              recommend Fetch to my peers.
+            </p>
+          </div>
+        </div>
 
-          <Card
-            text="Closer is an innovative startup in the online social media and networking industry, It was designed and developed by MAVI TECHNOLOGIES PVT LTD . Our app uses location-based technology to connect users who are nearby or have crossed paths in real life ."
-            name="Lorem"
-            image="avatar-4"
-          />
-        </Slider>
-      </Carousal>
-    </Section>
+        <div>
+          <img src="https://th.bing.com/th?id=OIP.nzqKyZd-q8C9rjA3Jx7FWgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="abg"/>
+          <div className="myCarousel">
+            <h3>Theo Sorel</h3>
+            <h4>Backend Developer</h4>
+            <p>
+              I enjoy catching up with Fetch on my laptop, or on my phone when
+              I'm on the go!
+            </p>
+          </div>
+        </div>    
+    </Carousel>
+    </>
   );
 };
 

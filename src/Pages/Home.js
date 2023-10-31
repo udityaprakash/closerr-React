@@ -1,12 +1,10 @@
-//This is home page, It will contains all the sections require in this page.
 
-//Import all the require sections here
 import HeroSection from "../Sections/Hero/index";
 import About from "../Sections/About/index";
-import Services from "../Sections/Services/index";
 import Testimonials from "../Sections/Testimonials/index";
 import Contact from "../Sections/Contact/index";
 import styled from "styled-components";
+import Features from "../Sections/Features";
 
 const Container = styled.div`
   display: flex;
@@ -21,7 +19,7 @@ const Home = () => {
     <Container>
       <HeroSection />
       <About />
-      <Services />
+      <Features/>
       <Testimonials />
       <Contact />
     </Container>

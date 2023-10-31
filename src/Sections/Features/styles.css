@@ -1,0 +1,32 @@
+.features-container h1{
+    font-size: 3rem;
+    margin-top: 100px;
+}
+.features-container{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: column;
+
+}
+.features-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.features-image{
+   height:80vh;
+   width: 60%;
+   display: flex;
+   justify-content: center;
+}
+
+.features-image img{
+    height: 80%;
+    width: 80%;   
+}
+
+.features-text ul{
+    width: 70%;
+}
