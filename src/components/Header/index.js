@@ -1,8 +1,8 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import logo from "../../assets/logo.jpeg";
-import "./styles.css"; // Import the external CSS file
+import "./styles.css"; 
 
 const Header = () => {
   const [click, setClick] = useState(false);
@@ -25,54 +25,14 @@ const Header = () => {
     scrollUp(id, e);
   };
 
-  useEffect(() => {
-    const element = ref.current;
-
-    const mq = window.matchMedia("(max-width: 40em)");
-    if (mq.matches) {
-      gsap.to(element, {
-        position: "fixed",
-        top: "0",
-        left: "0",
-        right: "0",
-        padding: "1rem 2.5rem",
-        border: "2px solid black",
-        duration: 1,
-        ease: "power1.out",
-        scrollTrigger: {
-          trigger: element,
-          start: "bottom+=200 top",
-          end: "+=100",
-          scrub: true,
-        },
-      });
-    } else {
-      gsap.to(element, {
-        position: "fixed",
-        top: "1rem",
-        left: "3rem",
-        right: "3rem",
-        padding: "1.5rem 2rem",
-        border: "3px solid var(--white)",
-        duration: 1,
-        ease: "power1.out",
-        scrollTrigger: {
-          trigger: element,
-          start: "bottom+=300 top",
-          end: "+=250",
-          scrub: true,
-        },
-      });
-    }
-  }, []);
-
+ 
   return (
-    <header ref={ref} className="header"> {/* Apply CSS class to the header element */}
-      <div className="logo"> {/* Apply CSS class to the logo container */}
+    <header ref={ref} className="header"> 
+      <div className="logo">
         <img src={logo} alt="CodeBucks" />
         <h3>Closer</h3>
       </div>
-      <nav className="nav"> {/* Apply CSS class to the nav container */}
+      <nav className="nav"> 
         <a href="#home" onClick={(e) => scrollUp("home", e)}>
           Home
         </a>
@@ -83,7 +43,7 @@ const Header = () => {
           Features
         </a>
         <a href="#contact" onClick={(e) => scrollUp("contact", e)}>
-          <button className="button">Contact Us</button> {/* Apply CSS class to the button */}
+          <button className="button">Contact Us</button>
         </a>
       </nav>
       <div
@@ -103,7 +63,7 @@ const Header = () => {
           features
         </a>
         <a href="#contact" onClick={(e) => handleClick("contact", e)}>
-          <button className="button">Contact Us</button> {/* Apply CSS class to the button */}
+          <button className="button">Contact Us</button>
         </a>
       </nav>
     </header>

@@ -18,43 +18,40 @@ const About = () => {
           <div className="rocket">
             <div
               data-aos="fade-right"
-              data-aos-offset="300"
+              data-aos-offset="400"
               data-aos-easing="ease-in-sine"
             >
               <img src={rocket} alt="" width="400" height="400" />
             </div>
           </div>
           <div className="about-text">
-          <div
-                data-aos="fade-left"
-                data-aos-anchor="#example-anchor"
-                data-aos-offset="500"
-                data-aos-duration="500"
-              >
-            <h4 className="text">
-              
-                Closer is an innovative startup in the online social media and
-                networking industry, It was designed and developed by MAVI
-                TECHNOLOGIES PVT LTD . Our app uses location-based technology to
-                connect users who are nearby or have crossed paths in real life
-                .we turns missed connections into potential relationships. With
-                a focus on serendipity and proximity, Closer offers a unique and
-                exciting way for people to meet and connect. We projected our
-                revenue streams through targeted advertising. Our growth plan
-                includes strategic partnerships, marketing initiatives, and
-                continuous product enhancements. We project strong revenue and
-                profitability as we revolutionize the way people connect. Join
-                us on this incredible journey and be part of reshaping the
-                future of relationships! we are the upcoming and highly
-                anticipated startup in the online social networking industry.
-                Our app, which is set to launch soon. We at closer aims to
-                revolutionize the way people meet and connect. We have exciting
-                revenue streams planned, including targeted advertising. Stay
-                tuned for updates on our launch and be ready to experience a
-                whole new way of finding meaningful connections!
-             
+            <h4
+              className="text"
+              data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
+              Closer is an innovative startup in the online social media and
+              networking industry, It was designed and developed by MAVI
+              TECHNOLOGIES PVT LTD . Our app uses location-based technology to
+              connect users who are nearby or have crossed paths in real life
+              .we turns missed connections into potential relationships. With a
+              focus on serendipity and proximity, Closer offers a unique and
+              exciting way for people to meet and connect. We projected our
+              revenue streams through targeted advertising. Our growth plan
+              includes strategic partnerships, marketing initiatives, and
+              continuous product enhancements. We project strong revenue and
+              profitability as we revolutionize the way people connect. Join us
+              on this incredible journey and be part of reshaping the future of
+              relationships! we are the upcoming and highly anticipated startup
+              in the online social networking industry. Our app, which is set to
+              launch soon. We at closer aims to revolutionize the way people
+              meet and connect. We have exciting revenue streams planned,
+              including targeted advertising. Stay tuned for updates on our
+              launch and be ready to experience a whole new way of finding
+              meaningful connections!
             </h4>
-            </div>
+
             <div>
               <span
                 className="circle"

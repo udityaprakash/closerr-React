@@ -7,6 +7,8 @@ const FOOTER = styled.footer`
   padding: 1.2rem calc(2.5rem + 2.5vw);
   font-size: 1rem;
   display: flex;
+  background-color:black;
+  color:white;
   align-items: center;
   justify-content: space-between;
   @media only Screen and (max-width: 48em) {
@@ -48,7 +50,7 @@ const Footer = () => {
     <FOOTER>
       <LeftText>
         © 2023 Built and Design by{" "}
-        <a href="https://www.youtube.com/">
+        <a href="https://www.youtube.com/" >
           @Closer
         </a>
       </LeftText>
@@ -72,4 +74,4 @@ const Footer = () => {
 
 export default Footer;
 
-//© 2021 by CodeBucks. Design by @CodeBucks.
+

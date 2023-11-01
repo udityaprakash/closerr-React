@@ -14,18 +14,19 @@ const Features = () => {
         <h1>Features</h1>
         <div className="features-box">
           <div className="features-image">
-            <div data-aos="zoom-in-down">
+            <div data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine">
               <img src={lady} alt="Lady" />
             </div>
           </div>
           <div className="features-text">
             <div
               data-aos="fade-left"
-              data-aos-anchor="#example-anchor"
-              data-aos-offset="500"
-              data-aos-duration="500"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
             >
-              <ul>
+              <ul  >
                 <li>
                   It is an open social media application platform where people
                   can freely connect, share moments, and engage with others.

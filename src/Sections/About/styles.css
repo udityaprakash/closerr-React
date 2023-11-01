@@ -101,6 +101,12 @@ section#about {
   div.about-text {
     width: 50%;
     position: relative;
+    font-weight: 100;
+  }
+
+  div.about-text h4{
+   
+    font-weight: 100;
   }
   
   @media only screen and (max-width: 40em) {
