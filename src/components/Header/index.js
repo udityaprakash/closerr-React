@@ -42,8 +42,8 @@ const Header = () => {
         <a href="#Features" onClick={(e) => scrollUp("features", e)}>
           Features
         </a>
-        <a href="#contact" onClick={(e) => scrollUp("contact", e)}>
-          <button className="button">Contact Us</button>
+        <a href="#contact" onClick={(e) => scrollUp("contact", e)} >
+          <button className="button" style={{fontWeight:"bolder"}}>Contact Us</button>
         </a>
       </nav>
       <div

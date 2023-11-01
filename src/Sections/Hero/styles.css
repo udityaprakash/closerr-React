@@ -8,8 +8,7 @@ section#home {
     background-color: white;
     display: flex;
     justify-content: center;
-    position: relative;
-    
+    position: relative;   
   }
   
   @media only screen and (max-width: 48em) {
@@ -71,7 +70,6 @@ section#home {
       flex-direction: column;
       width:80%;
       text-align: justify;
-
     }
   }
 
@@ -129,6 +127,10 @@ section#home {
     }
   }
   
+
+  .button-hover:hover {
+    color: white;
+}
   
  
 
@@ -136,7 +138,14 @@ section#home {
     font-size: 50px;
     line-height: 1.2;
     padding: 0.5rem 0;
+    font-family: ' Josefin Sans';
+    text-align:left;
   }
+
+  .left-block .title,
+.left-block .sub-text {
+    font-family: 'Mulish';
+}
   
   @media only screen and (max-width:768px) {
     div.lb {
@@ -148,6 +157,8 @@ section#home {
   h5.sub-text {
     font-size: calc(0.5rem + 0.5vw);
     font-weight: 100;
+    font-family:'Mulish';
+    color: #282936;
   }
   
   button {
@@ -162,11 +173,14 @@ section#home {
     padding: 0;
     font-size: inherit;
     font-family: inherit;
+    
    }
    
    button.learn-more {
     width: 12rem;
     height: auto;
+    padding-top: 20px;
+   
    }
    
    button.learn-more .circle {
@@ -178,6 +192,7 @@ section#home {
     height: 3rem;
     background: #282936;
     border-radius: 1.625rem;
+   
    }
 
    button.learn-more:hover{
@@ -217,7 +232,7 @@ section#home {
    button.learn-more .button-text {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: absolute;
-    top: 0;
+    top: 18;
     left: 0;
     right: 0;
     bottom: 0;

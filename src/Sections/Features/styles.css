@@ -1,6 +1,7 @@
-.features-container h1 {
-  font-size: 3rem;
+.features-container h1{
+  font-size: 2.5rem;
   margin-top: 100px;
+  font-family: 'Josefin Sans';
 }
 
 .features-box{
@@ -28,6 +29,10 @@
 
 .features-text ul {
   width: 70%;
+}
+
+.features-text ul li{
+  font-family: 'Mulish';
 }
 
 @media screen and (max-width: 768px) {

@@ -107,6 +107,7 @@ const Form = styled.form`
     transition: transform 0.3s;
     &:hover {
       transform: scale(1.1);
+      color:white;
     }
     &:active {
       transform: scale(0.9);
@@ -165,7 +166,8 @@ const Contact = () => {
           <button
             onClick={(e) => {
               e.preventDefault();
-            }}
+            }} style={{ color:"black" }}
+            className="button-hover"
           >
             Submit
           </button>

@@ -50,7 +50,7 @@ const Footer = () => {
     <FOOTER>
       <LeftText>
         © 2023 Built and Design by{" "}
-        <a href="https://www.youtube.com/" >
+        <a href="https://www.youtube.com/" style={{color:"#15ddd3"}}>
           @Closer
         </a>
       </LeftText>
