@@ -33,6 +33,8 @@
 
 .features-text ul li{
   font-family: 'Mulish';
+  font-size: large;
+  line-height: 30px;
 }
 
 @media screen and (max-width: 768px) {

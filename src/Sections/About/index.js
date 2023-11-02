@@ -17,9 +17,7 @@ const About = () => {
         <div className="content">
           <div className="rocket">
             <div
-              data-aos="fade-right"
-              data-aos-offset="400"
-              data-aos-easing="ease-in-sine"
+              data-aos="zoom-in-up"
             >
               <img src={rocket} alt="" width="400" height="400" />
             </div>
@@ -27,9 +25,7 @@ const About = () => {
           <div className="about-text">
             <h4
               className="text"
-              data-aos="fade-left"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine"
+              data-aos="zoom-in-down"
             >
               Closer is an innovative startup in the online social media and
               networking industry, It was designed and developed by MAVI

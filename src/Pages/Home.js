@@ -5,6 +5,7 @@ import Testimonials from "../Sections/Testimonials/index";
 import Contact from "../Sections/Contact/index";
 import styled from "styled-components";
 import Features from "../Sections/Features";
+// import Navbar from "../components/Navbar/Navbar";
 
 const Container = styled.div`
   display: flex;
@@ -17,6 +18,7 @@ const Container = styled.div`
 const Home = () => {
   return (
     <Container>
+      {/* <Navbar/> */}
       <HeroSection />
       <About />
       <Features/>

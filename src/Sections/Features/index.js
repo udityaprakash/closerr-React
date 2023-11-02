@@ -14,17 +14,13 @@ const Features = () => {
         <h1>Features</h1>
         <div className="features-box">
           <div className="features-image">
-            <div data-aos="fade-right"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine">
+            <div data-aos="zoom-in-down">
               <img src={lady} alt="Lady" />
             </div>
           </div>
           <div className="features-text">
             <div
-              data-aos="fade-left"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine"
+              data-aos="zoom-in-up"
             >
               <ul  >
                 <li>

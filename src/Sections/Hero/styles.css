@@ -135,7 +135,7 @@ section#home {
  
 
   h1.title {
-    font-size: 50px;
+    font-size:60px;
     line-height: 1.2;
     padding: 0.5rem 0;
     font-family: ' Josefin Sans';
@@ -167,7 +167,7 @@ section#home {
 
 
   h5.sub-text {
-    font-size: calc(0.5rem + 0.5vw);
+    font-size:large;
     font-weight: 100;
     font-family:'Mulish';
     color: #282936;

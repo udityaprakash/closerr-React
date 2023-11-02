@@ -43,10 +43,16 @@ section#about {
 
   .about-text .text {
     font-family: "Mulish"; 
+    font-size: large;
 }
 
- 
-  
+@media only screen and (max-width: 48em)
+{
+.about-text .text {
+    font-size: large;
+    width: 100%;
+}
+}
 
   div.curved-line {
     width: 7rem;
