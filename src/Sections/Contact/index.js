@@ -84,7 +84,7 @@ const Form = styled.form`
     padding: 1rem calc(0.5rem + 1vw);
     margin-bottom: 1rem;
     background-color:white;
-    // border: none;
+    border:2px solid black;
     border-radius: 4px;
     color: black;
     margin-bottom: 2rem;
@@ -98,9 +98,9 @@ const Form = styled.form`
     }
   }
   button {
-    padding: 0.8rem 2rem;
+    padding: 0.5rem 2rem;
     background-color:#15ddd3;
-    border-radius: 20px;
+    border-radius: 50px;
     font-size: 1.2rem;
     color:white;
     cursor: pointer;

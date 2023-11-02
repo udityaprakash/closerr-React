@@ -52,7 +52,7 @@ const About = () => {
               meaningful connections!
             </h4>
 
-            <div>
+            <div className="circle-container">
               <span
                 className="circle"
                 style={{ backgroundColor: "rgb(21, 221, 211)" }}

@@ -31,7 +31,7 @@ section#home {
   
   @media only screen and (max-width: 48em) {
     div.blobs {
-      opacity: 0.5;
+      opacity:1;
     }
   }
   
@@ -142,9 +142,21 @@ section#home {
     text-align:left;
   }
 
+  @media only screen and (max-width: 48em) {
+    .about-text .text{
+      font-size:large;
+      width: 110%;
+    }
+  }
+
   .left-block .title,
 .left-block .sub-text {
     font-family: 'Mulish';
+    
+}
+
+.left-block .title{
+  text-align: left;
 }
   
   @media only screen and (max-width:768px) {
@@ -159,6 +171,15 @@ section#home {
     font-weight: 100;
     font-family:'Mulish';
     color: #282936;
+  }
+
+  @media only screen and (max-width:768px) {
+    h5.sub-text {
+      font-size:large;
+      font-weight: 100;
+      width: 100%;
+    }
+  
   }
   
   button {

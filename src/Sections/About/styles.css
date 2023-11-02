@@ -93,6 +93,12 @@ section#about {
     color: var(--nav2);
     text-align: justify;
   }
+
+  .circle-container{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
   
   
   span.circle {
@@ -103,6 +109,7 @@ section#about {
     background-color: black;
     margin-right: 0.5rem;
     margin-top: 1rem;
+    
   }
   
   
