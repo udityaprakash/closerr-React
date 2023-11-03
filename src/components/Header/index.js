@@ -1,11 +1,12 @@
 import React, { useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import logo from "../../assets/logo.jpeg";
-import "./styles.css"; 
+import "./styles.css";
+import logo from "../../assets/logo.jpeg"; 
 
 const Header = () => {
   const [click, setClick] = useState(false);
+
   const ref = useRef(null);
 
   gsap.registerPlugin(ScrollTrigger);
@@ -25,48 +26,28 @@ const Header = () => {
     scrollUp(id, e);
   };
 
- 
   return (
-    <header ref={ref} className="header"> 
+    <div className="header" ref={ref}>
       <div className="logo">
-        <img src={logo} alt="CodeBucks" />
+        <img src={logo} alt="closer" />
         <h3>Closer</h3>
       </div>
-      <nav className="nav"> 
+      <div className="nav">
         <a href="#home" onClick={(e) => scrollUp("home", e)}>
           Home
         </a>
         <a href="#about" onClick={(e) => scrollUp("about", e)}>
           About Us
         </a>
-        <a href="#Features" onClick={(e) => scrollUp("features", e)}>
-          Features
+        <a href="#services" onClick={(e) => scrollUp("services", e)}>
+          Services
         </a>
-        <a href="#contact" onClick={(e) => scrollUp("contact", e)} >
-          <button className="button" style={{fontWeight:"bolder"}}>Contact Us</button>
+        <a href="#contact" onClick={(e) => scrollUp("contact", e)}>
+          Contact Us
         </a>
-      </nav>
-      <div
-        className={`hamburger-btn ${click ? "clicked" : ""}`}
-        onClick={() => setClick(!click)}
-      >
-        <span></span>
       </div>
-      <nav className={`mobile-menu ${click ? "clicked" : ""}`}>
-        <a href="#home" onClick={(e) => handleClick("home", e)}>
-          Home
-        </a>
-        <a href="#about" onClick={(e) => handleClick("about", e)}>
-          About Us
-        </a>
-        <a href="#features" onClick={(e) => handleClick("features", e)}>
-          features
-        </a>
-        <a href="#contact" onClick={(e) => handleClick("contact", e)}>
-          <button className="button">Contact Us</button>
-        </a>
-      </nav>
-    </header>
+      {/* Add HamburgerBtn and MobileMenu components here */}
+    </div>
   );
 };
 

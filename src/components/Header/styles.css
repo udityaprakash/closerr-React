@@ -1,322 +1,158 @@
-body{
-  padding: 0;
-  margin: 0;
-  font-family: 'Freehand';
+/* header.css */
+
+/* Header Container */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+  background-color: white;
+  color: var(--white);
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  z-index: 500;
 }
 
-html{
-  padding: 0;
-  margin: 0;
-}
-
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 5rem;
-    border-bottom: 5px solid black;
-    background-color: white;
-    color: black;
-    z-index: 500;
-    position:fixed;
-    width:100%;
-  }
-  
-  @media only screen and (max-width: 64em) {
-    header {
-      padding: 0.5rem 3rem;
-    }
-  }
-  
-  @media only screen and (max-width: 40em) {
-    header {
-      padding: 0.5rem 1.5rem;
-    }
-  }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-    width: 3.5rem;
-    height: auto;
-    cursor: pointer;
-  }
-
- .logo h3{
+/* Logo Styles */
+.logo {
+  display: flex;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
   font-size: 30px;
+  cursor: pointer;
   font-family: 'Freehand';
-                                                
- }
- 
-  .logo img {
-    margin-right: 0.5rem; 
-  }
-  
- 
-  nav {
-    width: 25rem;
-    max-width: 40rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  @media only screen and (max-width: 48em) {
-    nav {
-      display: none;
-    }
-  }
-  
-  .nav a {
-    font-weight: 600;
-    line-height: 1.5;
-    color: black;
-    padding: 4px 10px;
-    font-family: 'Mulish';
+}
 
-  }
-  
-  nav a:hover {
-   background-color: black;
-    color: white;
-   border-radius: 20px;
-  }
-  
-  button:hover {
-    background-color:black;
-    color: white;body {
-      padding: 0;
-      margin: 0;
-      font-family: 'Freehand';
-    }
-    
-    html {
-      padding: 0;
-      margin: 0;
-    }
-    
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 5rem;
-      border-bottom: 5px solid black;
-      background-color: white;
-      color: black;
-      z-index: 500;
-      position: fixed;
-      width: 100%;
-    }
-    
-    @media only screen and (max-width: 64em) {
-      header {
-        padding: 0.5rem 3rem;
-      }
-    }
-    
-    @media only screen and (max-width: 40em) {
-      header {
-        padding: 0.5rem 1.5rem;
-      }
-    }
-    
-    .logo {
-      display: flex;
-      align-items: center;
-      cursor: pointer;
-    }
-    
-    .logo h3 {
-      font-size: 30px;
-      font-family: 'Freehand';
-      margin: 0; /* Added to remove default margin */
-    }
-    
-    .logo img {
-      margin-right: 0.5rem;
-    }
-    
-    nav {
-      width: 25rem;
-      max-width: 100%; /* Changed to allow it to take the full available width */
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    
-    @media only screen and (max-width: 48em) {
-      nav {
-        display: none;
-      }
-    }
-    
-    .nav a {
-      font-weight: 600;
-      line-height: 1.5;
-      color: black;
-      padding: 4px 10px;
-      font-family: 'Mulish';
-    }
-    
-    .nav a:hover {
-      background-color: black;
-      color: white;
-      border-radius: 20px;
-    }
-    
-    /* Add styles for the hamburger button */
-    .hamburger-btn {
-      display: none;
-      /* Your styles for the button */
-    }
-    
-    @media only screen and (max-width: 48em) {
-      .hamburger-btn {
-        display: inline-block;
-      }
-    }
-    
-    .hamburger-btn {
-      /* Your styles for the button */
-    }
-    
-    /* Add styles for the mobile menu */
-    .mobile-menu {
-      display: none;
-      /* Your styles for the mobile menu */
-    }
-    
-    @media only screen and (max-width: 48em) {
-      .mobile-menu {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 2rem 0;
-        overflow-x: hidden;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.5s;
-        z-index: 100;
-        background-color: rgba(53, 53, 63, 0.95);
-        margin: 0.5rem;
-      }
-    }
-    
-    .mobile-menu a {
-      color: var(--white); 
-      font-weight: 600;
-      font-size: 1.5rem;
-      margin: 1.5rem;
-      cursor: pointer;
-    }
-    
-  }
-  
-  
-  
-  @media only screen and (max-width: 40em) {
-    button {
-      font-size: 1.2rem;
-    }
-  
-    button:hover {
-      transform: none;
-    }
-  
-  }
-  
-  .hamburger-btn {
-    display: none;
-  }
-  
-  @media only screen and (max-width: 48em) {
-    .hamburger-btn {
-      display: inline-block;
-    }
-  }
-  
-  .hamburger-btn {
-    position: relative;
-    background-color: transparent;
-    width: 2rem;
-    height: 2px;
-    margin-top: 0rem;
-    transition: all 0.3s;
-    cursor: pointer;
-  }
-  
-  .hamburger-btn::before,
-  .hamburger-btn::after {
-    content: "";
-    background-color: var(--white);
-    width: 2rem;
-    height: 2px;
+.logo img {
+  margin-right: 0.5rem;
+}
+
+.logo h3 {
+  font-family: 'Freehand';
+}
+
+/* Navigation Styles */
+.nav {
+  width: 30rem;
+  max-width: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav a {
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--white);
+  padding: 6px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.nav a:hover {
+  background-color: black;
+  color: white;
+  padding: 6px;
+}
+
+/* Button Styles */
+.button {
+  background-color: var(--purple);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  color: var(--white);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+.button:focus {
+  transform: scale(0.9);
+}
+
+/* Hamburger Button Styles */
+.hamburger-btn {
+  display: none;
+  @media only Screen and (max-width: 48em) {
     display: inline-block;
-    position: absolute;
-    left: 0;
-    cursor: pointer;
-    transition: all 0.3s;
   }
-  
-  .hamburger-btn::before {
-    top: 0;
-    transform: rotate(0);
-  }
-  
-  .hamburger-btn::after {
-    top: 0.5rem;
-    transform: rotate(0);
-  }
-  
-  .hamburger-btn.clicked::before {
-    top: -0.5rem;
-    transform: rotate(135deg);
-  }
-  
-  .hamburger-btn.clicked::after {
-    top: 0.5rem;
-    transform: rotate(-135deg);
-  }
-  
-  .mobile-menu {
-    display: none;
-  }
-  
-  @media only screen and (max-width: 48em) {
-    .mobile-menu {
-      display: flex;
-    }
-  }
-  
-  .mobile-menu{
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 0;
-    overflow-x: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.5s;
-    z-index: -10;
-    background-color: rgba(53, 53, 63, 0.95);
-    margin: 0.5rem;
-  }
-  
-  .mobile-menu a {
-    color: var(--white);
-    font-weight: 600;
-    font-size: 1.5rem;
-    margin: 1.5rem;
-    cursor: pointer;
-  }
+  position: relative;
+  background-color: black;
+  width: 2rem;
+  height: 2px;
+  margin-top: 0rem;
+  transition: all 0.3s;
+  cursor: pointer;
+}
 
- 
+.hamburger-btn::before,
+.hamburger-btn::after {
+  content: "";
+  background-color: var(--white);
+  width: 2rem;
+  height: 2px;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.hamburger-btn::before {
+  top: 0;
+  transform: rotate(0);
+}
+
+.hamburger-btn::after {
+  top: 0;
+  transform: rotate(0);
+}
+
+.hamburger-btn.clicked::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+.hamburger-btn.clicked::after {
+  top: 0;
+  transform: rotate(-135deg);
+}
+
+/* Mobile Menu Styles */
+.mobile-menu {
+  display: none;
+  @media only Screen and (max-width: 48em) {
+    display: flex;
+  }
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  overflow-x: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+  z-index: -10;
+  background-color: rgba(53, 53, 63, 0.95);
+  border-radius: 20px;
+  margin: 0.5rem;
+}
+
+.mobile-menu a {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 1.5rem;
+  cursor: pointer;
+}
