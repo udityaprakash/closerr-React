@@ -12,6 +12,11 @@
   height: 100px;
   width: 100%;
   z-index: 500;
+
+  @media only Screen and (max-width: 587px) {
+    /* display:none; */
+    padding: 1rem 2rem;
+  }
 }
 
 /* Logo Styles */
@@ -23,6 +28,12 @@
   font-size: 30px;
   cursor: pointer;
   font-family: 'Freehand';
+
+  @media only Screen and (max-width: 587px) {
+    width: 3rem;
+    height: 3rem;
+  }
+
 }
 
 .logo img {
@@ -40,6 +51,19 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media only Screen and (max-width: 877px) {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    top: 100px;
+    max-width: 100vw;
+    right: 0rem;
+    background-color: white;
+    width: 100vw;
+  }
 }
 
 .nav a {
@@ -125,34 +149,57 @@
   transform: rotate(-135deg);
 }
 
-/* Mobile Menu Styles */
-.mobile-menu {
-  display: none;
-  @media only Screen and (max-width: 48em) {
-    display: flex;
+
+.mobileMenu{
+  display: none ;
+
+  @media only Screen and (max-width: 877px) {
+    /* display: block; */
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    top: 100px;
+    right: 0rem;
+    background-color: white;
+    width: 100vw;
+
   }
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem 0;
-  overflow-x: hidden;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.5s;
-  z-index: -10;
-  background-color: rgba(53, 53, 63, 0.95);
-  border-radius: 20px;
-  margin: 0.5rem;
 }
 
-.mobile-menu a {
-  color: var(--white);
-  font-weight: 600;
-  font-size: 1.5rem;
-  margin: 1.5rem;
+.mobileMenu a{
+  color: black;
+  font-weight: 400;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+
+
+
+
+.hamburgerMenu{
+  display: none;
+  @media only Screen and (max-width: 877px) {
+    display: inline-block;
+  }
+  position: relative;
+  width: 1.5rem;
+  height: 1.5rem;
+  transition: all 0.3s;
   cursor: pointer;
+}
+
+
+.hamburgerBtn{
+ position: absolute;
+ top: 0;
+}
+
+.hamburgerClose{
+  display: none;
+ position: absolute;
+ top: 0;
 }
