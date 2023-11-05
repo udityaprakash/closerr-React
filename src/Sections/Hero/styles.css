@@ -18,6 +18,7 @@ section#home {
     }
   }
   
+  
   @media only screen and (max-width: 420px) {
     section#home {
       height: 100vh;
@@ -25,16 +26,7 @@ section#home {
       padding-bottom: 2rem;
     }
   }
-  
-
-  
-  
-  @media only screen and (max-width: 48em) {
-    div.blobs {
-      opacity:1;
-    }
-  }
-  
+ 
 
   div#home {
     display: flex;
@@ -88,7 +80,7 @@ section#home {
       width: 100%;
       bottom: 0;
       width: calc(30% + 20vw);
-      opacity: 0.5;
+      opacity: 1;
     }
   }
   
@@ -132,8 +124,6 @@ section#home {
     color: white;
 }
   
- 
-
   h1.title {
     font-size:xx-large;
     line-height: 1.2;
@@ -254,6 +244,7 @@ section#home {
    button.learn-more .button-text {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: absolute;
+    width:180px;
     top: 18;
     left: 0;
     right: 0;
@@ -264,12 +255,10 @@ section#home {
     font-weight: 700;
     line-height: 1.6;
     text-align: center;
-    text-transform: uppercase;
    }
    
    button:hover .circle {
     width: 100%;
-    /* border-radius: 20px; */
    }
    
    button:hover .circle .icon.arrow {

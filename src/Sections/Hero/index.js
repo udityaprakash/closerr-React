@@ -18,7 +18,7 @@ const HeroSection = () => {
           <span class="circle" aria-hidden="true">
             <span class="icon arrow"></span>
           </span>
-          <span class="button-text">Get Demo</span>
+          <span class="button-text">Coming Soon..</span>
         </button>
       </div>
       <img
