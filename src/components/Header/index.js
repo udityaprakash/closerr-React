@@ -55,7 +55,7 @@ const Header = () => {
     if(width>877)
     {
       setOpen(false)
-      // mobMenu.current.style.display = "none"
+      mobMenu.current.style.display = "none"
 
     }
 
@@ -69,7 +69,7 @@ const Header = () => {
         <img src={logo} alt="closer" />
         <h3>Closer</h3>
       </div>
-      <div className="nav" ref={mobMenu}>
+      <div className="nav">
         <a href="#home" onClick={(e) => scrollUp("home", e)}>
           Home
         </a>
@@ -84,7 +84,7 @@ const Header = () => {
         </a>
       </div>
 
-      {/* <div className="mobileMenu" ref={mobMenu}>
+      <div className="mobileMenu" ref={mobMenu}>
         <a href="#home" onClick={(e) => scrollUp("home", e)}>
           Home
         </a>
@@ -97,7 +97,7 @@ const Header = () => {
         <a href="#contact" onClick={(e) => scrollUp("contact", e)}>
           Contact Us
         </a>
-      </div> */}
+      </div>
 
       {/* Add HamburgerBtn and MobileMenu components here */}
         <div className="hamburgerMenu">
