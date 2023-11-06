@@ -11,7 +11,7 @@ const Header = () => {
   const [click, setClick] = useState(false);
   const [open,setOpen] = useState(false);
 
-  const mobMenu = useRef();
+  const mobMenu = useRef(null);
   const ref = useRef(null);
 
   gsap.registerPlugin(ScrollTrigger);
