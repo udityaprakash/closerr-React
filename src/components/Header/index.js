@@ -2,7 +2,8 @@ import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./styles.css";
-import logo from "../../assets/logo.jpeg"; 
+import logo from "../../assets/logo.jpeg";
+import closertext from "../../assets/closertext.png";
 import { AiOutlineMenu } from "react-icons/ai";
 import { AiOutlineClose } from "react-icons/ai";
 
@@ -67,14 +68,15 @@ const Header = () => {
     <div className="header" ref={ref}>
       <div className="logo">
         <img src={logo} alt="closer" />
-        <h3>Closer</h3>
+        <img src={closertext} alt="closer" height="100" />
+        {/* <h3>Closer</h3> */}
       </div>
       <div className="nav">
         <a href="#home" onClick={(e) => scrollUp("home", e)}>
           Home
         </a>
         <a href="#about" onClick={(e) => scrollUp("about", e)}>
-          About Us
+          About
         </a>
         <a href="#services" onClick={(e) => scrollUp("services", e)}>
           Services

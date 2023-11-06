@@ -123,9 +123,12 @@ section#home {
   .button-hover:hover {
     color: white;
 }
+.title{
+  font-size: xx-large;
+}
   
   h1.title {
-    font-size:xx-large;
+    /* font-size:36px; */
     line-height: 1.2;
     font-family: 'Josefin Sans';
     text-align:left;
