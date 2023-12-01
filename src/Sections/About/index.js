@@ -31,21 +31,34 @@ const About = () => {
               networking industry, It was designed and developed by MAVI
               TECHNOLOGIES PVT LTD . Our app uses location-based technology to
               connect users who are nearby or have crossed paths in real life
-              .we turns missed connections into potential relationships. With a
+              .Our aim is to turn missed connections into potential relationships. With a
               focus on serendipity and proximity, Closer offers a unique and
-              exciting way for people to meet and connect. We projected our
-              revenue streams through targeted advertising. Our growth plan
+              exciting way for people to meet and connect. Our growth plan
               includes strategic partnerships, marketing initiatives, and
-              continuous product enhancements. We project strong revenue and
-              profitability as we revolutionize the way people connect. Join us
+              continuous product enhancements.. Join us
               on this incredible journey and be part of reshaping the future of
               relationships! we are the upcoming and highly anticipated startup
               in the online social networking industry. Our app, which is set to
               launch soon. We at closer aims to revolutionize the way people
-              meet and connect. We have exciting revenue streams planned,
-              including targeted advertising. Stay tuned for updates on our
-              launch and be ready to experience a whole new way of finding
-              meaningful connections!
+              meet and connect.Closer have exciting revenue streams planned,
+              including hyper-localised targeted advertisment.
+              <pre>
+                <p>
+                  
+                  |
+
+                </p>
+              </pre>
+              <b><h3>
+
+                  Stay tuned for updates and be ready to experience a whole new way of finding meaningful connections!
+              </h3>
+                  </b>
+              {/* <p>
+                </p> 
+              <b>
+              
+              </b> */}
             </h4>
 
             <div className="circle-container">

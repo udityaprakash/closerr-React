@@ -12,7 +12,11 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.9.1",
     "react-dom": "^18.2.0",
+<<<<<<< HEAD
     "react-icons": "^4.12.0",
+=======
+    "react-icons": "^4.11.0",
+>>>>>>> 5675f4bf4d908eaddf69681ad3b7d235c02f630f
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.18.0",
     "react-scripts": "^5.0.1",
