@@ -3,7 +3,7 @@ import lady from "../../assets/lady.jpeg";
 import "./styles.css";
 import AOS from "aos";
 
-const Features = () => {
+const Services = () => {
   useEffect(() => {
     AOS.init();
   }, []);
@@ -45,4 +45,4 @@ const Features = () => {
   );
 };
 
-export default Features;
+export default Services;

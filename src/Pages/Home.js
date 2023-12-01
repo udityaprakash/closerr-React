@@ -4,7 +4,8 @@ import About from "../Sections/About/index";
 import Testimonials from "../Sections/Testimonials/index";
 import Contact from "../Sections/Contact/index";
 import styled from "styled-components";
-import Features from "../Sections/Features";
+// import Features from "../Sections/Features";
+import Services from "../Sections/Services";
 // import Navbar from "../components/Navbar/Navbar";
 
 const Container = styled.div`
@@ -21,7 +22,7 @@ const Home = () => {
       {/* <Navbar/> */}
       <HeroSection />
       <About />
-      <Features/>
+      <Services/>
       <Testimonials />
       <Contact />
     </Container>

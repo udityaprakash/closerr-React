@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./styles.css"; // Import the external CSS file
+import "./styles.css";
 import rocket from "../../assets/rocketimage.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
