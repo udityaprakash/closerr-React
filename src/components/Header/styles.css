@@ -59,6 +59,7 @@
 
 .nav a {
   font-weight: 600;
+  font-size: larger;
   line-height: 1.5;
   color: var(--white);
   padding: 6px;
