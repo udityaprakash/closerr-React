@@ -15,9 +15,7 @@
 
   @media only Screen and (max-width: 587px) {
     padding: 0rem 2rem;
-    .header {
-      height: 50px;
-    }
+  height: 70px;
     
   }
 }
