@@ -9,12 +9,19 @@
   background-color: white;
   color: var(--white);
   position: fixed;
-  height: 100px;
+  /* height: 100px; */
   width: 100%;
   z-index: 500;
 
   @media only Screen and (max-width: 587px) {
-    padding: 1rem 2rem;
+    padding: 0rem 2rem;
+    .header {
+      height: 50px;
+    }
+    img, svg {
+      width: 100%;
+      height: inherit;
+    }
   }
 }
 
