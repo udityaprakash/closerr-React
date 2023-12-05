@@ -160,7 +160,7 @@ const Contact = () => {
           id=""
           cols="30"
           rows="2"
-          placeholder="your message"
+          placeholder="Your message"
         ></textarea>
         <div style={{ margin: "0 auto" }}>
           <button

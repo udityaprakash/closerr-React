@@ -14,12 +14,16 @@
   z-index: 500;
 
   @media only Screen and (max-width: 587px) {
-    /* display:none; */
     padding: 1rem 2rem;
   }
 }
 
+img, svg {
+  width: 100%;
+  height: inherit;
+}
 /* Logo Styles */
+
 .logo {
   display: flex;
   align-items: center;
@@ -63,18 +67,20 @@
   line-height: 1.5;
   color: var(--white);
   padding: 6px;
-  border-radius: 20px;
+  border-radius: 10px;
   text-decoration: none;
   transition: background-color 0.2s, color 0.2s;
-}
-
-.nav a:hover {
   background-color: black;
   color: white;
   padding: 6px;
 }
 
+.nav a:hover {
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.6);
+}
+
 /* Button Styles */
+
 .button {
   background-color: var(--purple);
   padding: 0.5rem 1rem;
@@ -94,6 +100,7 @@
 }
 
 /* Hamburger Button Styles */
+
 .hamburger-btn {
   display: none;
   @media only Screen and (max-width: 48em) {
@@ -146,8 +153,7 @@
   display: none ;
 
   @media only Screen and (max-width: 877px) {
-    /* display: block; */
-    /* display: flex; */
+    
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
@@ -176,18 +182,17 @@
 }
 
 
-
-
 .hamburgerMenu{
   display: none;
-  @media only Screen and (max-width: 877px) {
-    display: inline-block;
-  }
   position: relative;
   width: 1.5rem;
   height: 1.5rem;
   transition: all 0.3s;
   cursor: pointer;
+
+  @media only Screen and (max-width: 877px) {
+    display: inline-block;
+  } 
 }
 
 

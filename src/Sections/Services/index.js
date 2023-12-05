@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import lady from "../../assets/lady.jpeg";
 import "./styles.css";
 import AOS from "aos";
+// import NavigationIcon from '@mui/icons-material/Navigation';
+
 
 const Services = () => {
   useEffect(() => {
@@ -22,7 +24,7 @@ const Services = () => {
             <div
               data-aos="zoom-in-up"
             >
-              <ul  >
+              <ul class="image-list" >
                 <li>
                   It is an open social media application platform where people
                   can freely connect, share moments, and engage with others.
