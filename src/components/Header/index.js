@@ -68,7 +68,7 @@ const Header = () => {
     <div className="header" ref={ref}>
       <div className="logo">
         <img src={logo} alt="closer" />
-        <img src={closertext} alt="closer" height="inherit" />
+        <img src={closertext} alt="closer" height="inherit" className="closer-logo"/>
         {/* <h3>Closer</h3> */}
       </div>
       <div className="nav">

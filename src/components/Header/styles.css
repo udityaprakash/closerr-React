@@ -23,7 +23,7 @@
   box-shadow: 2px 2px 5px 1px #888888 inset;
 }
 
-img, svg {
+.closer-logo {
   width: 100%;
   height:inherit;
 }
