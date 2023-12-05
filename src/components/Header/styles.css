@@ -14,15 +14,16 @@
   z-index: 500;
 
   @media only Screen and (max-width: 587px) {
-    padding: 0rem 2rem;
-  height: 70px;
-    
+  padding: 0rem 2rem;
+  height: 70px;    
   }
 }
 
 img, svg {
   width: 100%;
-  height: inherit;
+  @media only Screen and (max-width: 587px) {
+    height:inherit;
+  }
 }
 /* Logo Styles */
 
