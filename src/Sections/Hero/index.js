@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css";
 import lady from "../../assets/lady.jpeg";
-import search from "../../assets/search.png"
+import game from "../../assets/game.png"
 import appstore from "../../assets/app-store.png" 
 
 const HeroSection = () => {
@@ -23,7 +23,7 @@ const HeroSection = () => {
           <span class="button-text">Coming Soon..</span>
         </button>
         <div className="google-icons">
-          <img src={search} style={{height:"50px", width:"50px", paddingTop:"10px"}}></img>
+          <img src={game} style={{height:"50px", width:"50px", paddingTop:"10px"}}></img>
           <img src={appstore} style={{height:"50px", width:"50px", paddingTop:"10px", paddingLeft:"10px"}}></img>
         </div>
       </div>
