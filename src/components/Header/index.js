@@ -68,8 +68,8 @@ const Header = () => {
     <div className="header" ref={ref}>
       <div className="logo">
         <img src={logo} alt="closer" />
-        <img src={closertext} alt="closer" height="inherit" className="closer-logo"/>
-        {/* <h3>Closer</h3> */}
+        {/* <img src={closertext} alt="closer" height="inherit" className="closer-logo"/> */}
+        <h3 style={{color:"rgb(23,220,211)", fontFamily:"Pacifico"}}>Closer</h3>
       </div>
       <div className="nav">
         <a href="#home" onClick={(e) => scrollUp("home", e)}>

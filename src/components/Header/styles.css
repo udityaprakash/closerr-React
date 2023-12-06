@@ -69,6 +69,7 @@
 .nav a {
   font-weight: 600;
   font-size: larger;
+  font-family: 'Mulish';
   line-height: 1.5;
   color: var(--white);
   padding: 6px;

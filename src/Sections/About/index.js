@@ -45,13 +45,14 @@ const About = () => {
               <pre>
                 <p>
                   
-                  |
+                  <br></br>
 
                 </p>
               </pre>
-              <b><h3>
+              <b><h3 style={{fontFamily:"Mulish"}}>
 
                   Stay tuned for updates and be ready to experience a whole new way of finding meaningful connections!
+
               </h3>
                   </b>
               {/* <p>
