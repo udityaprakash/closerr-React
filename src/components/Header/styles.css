@@ -1,27 +1,23 @@
 /* header.css */
 
 /* Header Container */
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 5rem;
+  padding: 0rem 5rem;
   background-color: white;
   color: var(--white);
   position: fixed;
-  /* height: 100px; */
   width: 100%;
   z-index: 500;
-  
-
   @media only Screen and (max-width: 587px) {
   padding: 0rem 2rem;
   height: 70px;    
   }
 }
-.header:hover{
-  box-shadow: 2px 2px 5px 1px #888888 inset;
-}
+
 
 .closer-logo {
   width: 100%;
@@ -37,7 +33,6 @@
   font-size: 30px;
   cursor: pointer;
   font-family: 'Freehand';
-
   @media only Screen and (max-width: 587px) {
     width: 3rem;
     height: 3rem;

@@ -37,7 +37,8 @@ const Testimonials = () => {
             </p>
           </div>
         </div>
-        <div>
+
+        {/* <div>
           <img src="https://th.bing.com/th?id=OIP.UkTBowRhbbhym0TupnXktgHaE7&w=306&h=203&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="abg"/>
           <div className="myCarousel">
             <h3>Shirley Fultz</h3>
@@ -47,7 +48,7 @@ const Testimonials = () => {
               distracted by a social media element on the same site
             </p>
           </div>
-        </div>
+        </div> */}
 
         <div>
           <img src="https://th.bing.com/th?id=OIP.PlmU4CkadPFONP2jfjfSLwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="abg"/>
@@ -61,7 +62,7 @@ const Testimonials = () => {
           </div>
         </div>
 
-        <div>
+        {/* <div>
           <img src="https://th.bing.com/th?id=OIP.nzqKyZd-q8C9rjA3Jx7FWgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="abg"/>
           <div className="myCarousel">
             <h3>Theo Sorel</h3>
@@ -71,7 +72,8 @@ const Testimonials = () => {
               I'm on the go!
             </p>
           </div>
-        </div>    
+        </div>     */}
+        
     </Carousel>
     </>
   );

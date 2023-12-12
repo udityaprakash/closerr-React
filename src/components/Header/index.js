@@ -3,12 +3,11 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./styles.css";
 import logo from "../../assets/logo.jpeg";
-import closertext from "../../assets/closertext.png";
 import { AiOutlineMenu } from "react-icons/ai";
 import { AiOutlineClose } from "react-icons/ai";
 
 const Header = () => {
-  const [click, setClick] = useState(false);
+  // const [click, setClick] = useState(false);
   const [open,setOpen] = useState(false);
 
   const mobMenu = useRef(null);
@@ -26,10 +25,10 @@ const Header = () => {
     });
   };
 
-  const handleClick = (id, e) => {
-    setClick(!click);
-    scrollUp(id, e);
-  };
+  // const handleClick = (id, e) => {
+  //   setClick(!click);
+  //   scrollUp(id, e);
+  // };
 
   const openMenu = () => {
     setOpen(true)
@@ -48,6 +47,7 @@ const Header = () => {
     function handleResize() {
       setWidth(window.innerWidth);
     }
+
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, [width]);
@@ -59,27 +59,25 @@ const Header = () => {
       mobMenu.current.style.display = "none"
 
     }
-
-    
-  },[width]);
+},[width]);
 
 
   return (
     <div className="header" ref={ref}>
       <div className="logo">
         <img src={logo} alt="closer" />
-        {/* <img src={closertext} alt="closer" height="inherit" className="closer-logo"/> */}
         <h3 style={{color:"rgb(23,220,211)", fontFamily:"Pacifico"}}>Closer</h3>
       </div>
       <div className="nav">
+
         <a href="#home" onClick={(e) => scrollUp("home", e)}>
           Home
         </a>
         <a href="#about" onClick={(e) => scrollUp("about", e)}>
           About
         </a>
-        <a href="#services" onClick={(e) => scrollUp("services", e)}>
-          Services
+        <a href="#features" onClick={(e) => scrollUp("features", e)}>
+          Features
         </a>
         <a href="#contact" onClick={(e) => scrollUp("contact", e)}>
           Contact Us
@@ -93,8 +91,8 @@ const Header = () => {
         <a href="#about" onClick={(e) => scrollUp("about", e)}>
           About Us
         </a>
-        <a href="#services" onClick={(e) => scrollUp("services", e)}>
-          Services
+        <a href="#features" onClick={(e) => scrollUp("features", e)}>
+          Features
         </a>
         <a href="#contact" onClick={(e) => scrollUp("contact", e)}>
           Contact Us
