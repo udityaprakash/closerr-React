@@ -2,7 +2,8 @@ import React from "react";
 import "./styles.css";
 import lady from "../../assets/lady.jpeg";
 import game from "../../assets/game.png"
-import appstore from "../../assets/app-store.png" 
+// import appstore from "../../assets/app-store.png" 
+import googlestore from "../../assets/googlestore.png" 
 
 const HeroSection = () => {
   return (
@@ -23,8 +24,8 @@ const HeroSection = () => {
           <span class="button-text">Coming Soon..</span>
         </button>
         <div className="google-icons">
-          <img src={game} style={{height:"50px", width:"50px", paddingTop:"10px"}}></img>
-          <img src={appstore} style={{height:"50px", width:"50px", paddingTop:"10px", paddingLeft:"10px"}}></img>
+          {/* <img src="https://www.nicepng.com/png/detail/37-374927_apple-app-store-and-google-play-logos-app.png" style={{height:"200px", width:"300px", paddingTop:"10px"}}></img> */}
+          <img src={googlestore} style={{height:"200px", width:"300px", paddingTop:"10px", }}></img>
         </div>
       </div>
       <img

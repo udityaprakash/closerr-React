@@ -24,8 +24,8 @@ const Title = styled.h1`
   position: relative;
   &::before {
     content: "";
-    height: 1px;
-    width: 50%;
+    height: 2px;
+    width: 100%;
     position: absolute;
     left: 50%;
     bottom: 0;
