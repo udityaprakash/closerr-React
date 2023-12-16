@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./styles.css";
-import rocket from "../../assets/rocketimage.png";
+// import rocket from "../../assets/rocketimage.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -14,13 +14,13 @@ const About = () => {
       <div className="main">
         <h1 className="title1">About Us</h1>
     
-        <div className="content">
-          <div className="rocket">
+        {/* <div className="content"> */}
+          {/* <div className="rocket">
             <div data-aos="zoom-in-up">
               <img src={rocket} alt="" width="400" height="400" />
             </div>
-          </div>
-          <div className="about-text">
+          </div> */}
+          {/* <div className="about-text"> */}
             <h4 className="text" data-aos="zoom-in-down">
               Closer is an innovative startup in the online social media and
               networking industry, It was designed and developed by MAVI
@@ -58,8 +58,8 @@ const About = () => {
                 className="circle"
                 style={{ backgroundColor: "rgb(21, 221, 211)" }}
               />
-            </div>
-          </div>
+            {/* </div> */}
+          {/* </div> */}
         </div>
       </div>
     </section>
