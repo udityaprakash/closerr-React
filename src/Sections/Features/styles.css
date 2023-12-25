@@ -1,12 +1,17 @@
-.features-container h1{
-  font-size: 2.5rem;
-  margin-top: 100px;
-  font-family: 'Josefin Sans';
+* {
+  font-family: "Mulish";
 }
 
-.features-box{
+.features-container h1 {
+  font-size: 2.5rem;
+  margin-top: 100px;
+  font-family: "Josefin Sans";
+}
+
+.features-box {
   display: flex;
-  align-items: center;justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .features-container {
   display: flex;
@@ -32,14 +37,13 @@
   text-align: justify;
 }
 
-.features-text ul li{
-  font-family: 'Mulish';
+.features-text ul li {
+  font-family: "Mulish";
   font-size: large;
   line-height: 30px;
 }
 
 @media screen and (max-width: 768px) {
-
   .features-image {
     display: none;
   }
@@ -48,7 +52,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin:50px;
+    margin: 50px;
   }
 
   .features-text ul {
@@ -58,7 +62,7 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-  }  
+  }
 }
 
 .title2 {
@@ -66,7 +70,7 @@
   display: inline-block;
   text-align: center;
   margin-bottom: 50px;
-  border-bottom: 10px solid rgb(23,220,211);
+  border-bottom: 10px solid rgb(23, 220, 211);
   border-width: 2px;
   width: 150px;
   position: relative;
@@ -74,29 +78,25 @@
 }
 
 @media only screen and (max-width: 40em) {
-  
   .title2 {
-
-position:relative;
-left:0;       
+    position: relative;
+    left: 0;
   }
-
 }
 
 /* Styling for the unordered list */
 .image-list {
-  list-style-type: none; 
-  margin-left: 20px; 
+  list-style-type: none;
+  margin-left: 20px;
 }
 
 /* Styling for list items */
 .image-list li {
   margin-bottom: 5px;
-  padding-left: 25px; 
-  background: url('../../assets/right-arrow\ \(1\).png') no-repeat; 
-  background-size: 20px 20px; 
+  padding-left: 25px;
+  background: url("../../assets/right-arrow\ \(1\).png") no-repeat;
+  background-size: 20px 20px;
   background-position: 0 10%;
-  
 }
 
 @media screen and (max-width: 450px) {

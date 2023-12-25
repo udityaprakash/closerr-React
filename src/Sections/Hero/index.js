@@ -1,8 +1,8 @@
 import React from "react";
 import "./styles.css";
-import lady from "../../assets/lady.jpeg";
+import lady from "../../assets/lady1.png";
 // import game from "../../assets/game.png"
-import appstore from "../../assets/appstore.png" 
+import appstore from "../../assets/appstore1.png" 
 import playstore from "../../assets/playstore2.png" 
 
 const HeroSection = () => {
@@ -24,17 +24,17 @@ const HeroSection = () => {
           <span class="button-text">Coming Soon..</span>
         </button>
         <div className="google-icons">
-          <img src={playstore} style={{height:"100px", width:"120px",position:"relative",bottom:"50px" }} alt=""></img>
-          <img src={appstore} style={{height:"200px", width:"120px", }} alt=""></img>
+          <img src={playstore} className="playstore" alt=""></img>
+          <img src={appstore} className="appstore" alt=""></img>
         </div>
       </div>
+      <div className="mobile-svg">
       <img
         src={lady}
         alt="Mobile Svg"
-        className="mobile-svg"
-        width="400"
-        height="400"
+        className="mobile-svg"        
       />
+      </div>
     </div>
    
   );

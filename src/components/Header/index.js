@@ -76,6 +76,9 @@ const Header = () => {
         <a href="#about" onClick={(e) => scrollUp("about", e)}>
           About
         </a>
+        <a href="#mission" onClick={(e) => scrollUp("mission", e)}>
+          Mission
+        </a>
         <a href="#features" onClick={(e) => scrollUp("features", e)}>
           Features
         </a>
@@ -90,6 +93,9 @@ const Header = () => {
         </a>
         <a href="#about" onClick={(e) => scrollUp("about", e)}>
           About Us
+        </a>
+        <a href="#mission" onClick={(e) => scrollUp("mission", e)}>
+          Mission
         </a>
         <a href="#features" onClick={(e) => scrollUp("features", e)}>
           Features

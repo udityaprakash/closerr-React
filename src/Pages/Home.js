@@ -6,6 +6,7 @@ import Contact from "../Sections/Contact/index";
 import styled from "styled-components";
 // import Features from "../Sections/Features";
 import Features from "../Sections/Features";
+import Mission from "../Sections/Mission";
 // import Navbar from "../components/Navbar/Navbar";
 
 const Container = styled.div`
@@ -22,6 +23,7 @@ const Home = () => {
       {/* <Navbar/> */}
       <HeroSection />
       <About />
+      <Mission/>
       <Features/>
       <Testimonials />
       <Contact />

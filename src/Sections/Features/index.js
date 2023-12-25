@@ -14,7 +14,7 @@ const Services = () => {
     <>
     {/* <div></div> */}
       <div className="features-container" id="features">
-        <h1 className="title2">Features</h1>
+        <h1 className="title3">Features</h1>
         <div className="features-box">
           <div className="features-image">
             <div data-aos="zoom-in-down">
@@ -27,28 +27,28 @@ const Services = () => {
             >
               <ul class="image-list" >
                 <li>
-                Hyper location:- Introducing a new way of connecting people ,
-                  now with just simple a click you'll be able to connect or chat
-                  with people around you.
-
+                <h3>Location based Technology:-</h3> The app distinctive feature of linking users
+                based on proximity or real-life
+                intersections marks a revolutionary shift in the industry. 
                  ( Our unique location-based technology ensures that you never
                   miss an opportunity to connect with someone who could be your
-                  perfect match.) -in brackets
+                  perfect match.)
                 </li>
                 <li>
-                Advertising and monetization :- Presenting a new way of Advertising
-                 and monetizing posts ,with us now it'll become 100% easier and cost
-                effective for an advertiser to advertise them through our platform with 
-                a few steps .
+                <h3>Unique advertising model:- </h3>
+                Closer introduce an innovative advertising model designed to empower creators 
+                by enabaling them to monetize the photos they share.
                 
                 </li>
                 <li>
-                Localised searching:- Search anyone through their name & location 
-                  and you'll get the exact person you're searching for with a blink 
-                  of an eye.
+                <h3>Hyper-localized interaction:- </h3> 
+                  With Closer,users can engage with individuals in their vicinity 
+                  without the need for direct physical interaction.
                 </li>
                 <li>
-                now no more hustle & struggle ,just join closer and solve your puzzle .
+                <h3>Optimized home feed for seemless UX:- </h3> 
+                  Experience a seemlessly optimized home feed, ensuring a smooth and enjoyable 
+                  user experience at your fingertips.
                 </li>
               </ul>
             </div>

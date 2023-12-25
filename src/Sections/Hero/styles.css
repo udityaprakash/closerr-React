@@ -1,14 +1,38 @@
 *{
    font-style: normal;
+   font-family: "Mulish";
 }
 
 section#home {
-    width: 100vw;
-    height: 45vw;
-    background-color: white;
+   height: 45vw;
+   background-color: white;
+   display: flex;
+   justify-content: center;
+   position: relative;   
+  }
+
+  .google-icons{
     display: flex;
-    justify-content: center;
-    position: relative;   
+    align-items: center;
+    flex-direction:row;
+  }
+
+  .playstore{
+    height: 150px;
+    width: 240px;
+  } 
+
+  .appstore{
+    height: 100px;
+    width: 210px;
+  } 
+
+  @media only screen and (max-width: 48em) {
+    .google-icons{
+      display: flex;
+      align-items: center;
+      flex-direction:column;  
+    }
   }
   
   @media only screen and (max-width: 48em) {
@@ -65,10 +89,10 @@ section#home {
     }
   }
 
-  img.mobile-svg {
+  .mobile-svg img{
     max-width: 100%;
-    width: calc(30% + 20vw);
-    height: auto;
+    width:800px;
+    height: 600px;
     z-index: 7;
     position: relative;
     bottom: -65px;
@@ -126,27 +150,20 @@ section#home {
 .title{
   font-size: xx-large;
 }
-  
-  
 
-  @media only screen and (max-width: 48em) {
+@media only screen and (max-width: 48em) {
     .about-text .text{
       font-size:xx-larger;
       width: 110%;
     }
   }
 
-  .left-block .title,
-.left-block .sub-text {
-    font-family: 'Mulish';
-    
-}
-
+ 
 .left-block .title{
   text-align: left;
 }
   
-  @media only screen and (max-width:768px) {
+@media only screen and (max-width:768px) {
     div.lb {
       font-size: large;
     }
@@ -156,7 +173,6 @@ section#home {
   h5.sub-text {
     font-size:x-large;
     font-weight: 100;
-    font-family:'Mulish';
     color: #282936;
     position: relative;
     bottom: 20px;
@@ -182,7 +198,6 @@ section#home {
     background: transparent;
     padding: 0;
     font-size: inherit;
-    font-family: inherit;
     
    }
    
@@ -243,10 +258,10 @@ section#home {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: absolute;
     width:180px;
-    top: 18;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: -3px;
+    /* top: 5px; */
     padding: 0.75rem 0;
     margin: 0 0 0 1.85rem;
     color: #282936;
