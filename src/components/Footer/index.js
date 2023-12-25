@@ -42,6 +42,7 @@ const RightText = styled.div`
     }
   }
 `;
+
 const LeftText = styled.div`
   text-align: left;
 `;
@@ -55,18 +56,22 @@ const Footer = () => {
         </a>
       </LeftText>
       <RightText>
-        Reach out to me via 
-        <a href="https://twitter.com/">
+        Reach out to me via  
+        {/* <a href="https://twitter.com/">
           <img src={Twitter} alt="Twitter" />
         </a>
         &nbsp;
         <a href="https://www.instagram.com/">
           <img src={Instagram} alt="Instagram" />
-        </a>
+        </a><p>
         &nbsp;
         <a href="mailto:alimohdshadab63@gmail.com?subject=Email From Your Website">
           <img src={Gmail} alt="Gmail" />
-        </a>
+        </a> */}
+        <p>
+              
+        </p>
+        <span style={{paddingLeft:"10px"}}>  MAVI TECHNOLOGIES PVT LTD.</span>
       </RightText>
     </FOOTER>
   );

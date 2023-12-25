@@ -60,7 +60,7 @@
     line-height: 29px !important;
     color: #222;
     font-size: 15px;
-    font-family: sans-serif;
+    font-family:'Mulish';
     max-height: 67px;
   }
   
@@ -68,7 +68,7 @@
     content: "“";
     color: #aaa;
     font-size: 26px;
-    font-family: monospace;
+    font-family:'Mulish';
     font-weight: 100;
   }
   
@@ -76,7 +76,7 @@
     content: "”";
     color: #aaa;
     font-size: 26px;
-    font-family: monospace;
+    font-family:'Mulish';
     font-weight: 100;
     line-height: 0;
   }
