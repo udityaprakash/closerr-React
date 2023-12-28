@@ -2,6 +2,8 @@ import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./styles.css"; 
+import appdeveloper from "../../assets/uditya.jpeg"
+import frontenddeveloper from "../../assets/shadab (1).jpg"
 
 const Testimonials = () => {
   return (
@@ -15,10 +17,10 @@ const Testimonials = () => {
       interval={2000}
     >
         <div>
-          <img src="https://th.bing.com/th/id/OIP.GBzmVgh2QaeYprivEE65dAAAAA?pid=ImgDet&w=177&h=177&c=7&dpr=1.3"  alt="abg"/>
+          <img src={frontenddeveloper}  alt="abg"/>
           <div className="myCarousel">
-            <h3>Daniel Keystone</h3>
-            <h4>Designer</h4>
+            <h3>Shadab Ali</h3>
+            <h4>Developer</h4>
             <p>
               The simple and intuitive design makes it easy for me use. I highly
               recommend Fetch to my peers.
@@ -27,10 +29,10 @@ const Testimonials = () => {
         </div>
 
         <div>
-          <img src="https://th.bing.com/th/id/OIP.hnrQOIdtrBeuyiC27bVZmQAAAA?pid=ImgDet&w=177&h=177&c=7&dpr=1.3" alt="abg"/>
+          <img src={appdeveloper} alt="abg"/>
           <div className="myCarousel">
-            <h3>Theo Sorel</h3>
-            <h4>Fontend Developer </h4>
+            <h3>UDITYA PRAKASH</h3>
+            <h4>App Developer </h4>
             <p>
               I enjoy catching up with Fetch on my laptop, or on my phone when
               I'm on the go!
