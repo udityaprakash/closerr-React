@@ -87,3 +87,42 @@
        
     }
   }
+
+  @media only screen and (min-width: 768px) {
+    
+   
+    
+    .mission-text-container h1 {
+        font-size: 79px;
+        background-color: rgb(23,220,211);
+        padding: 10px;
+    }
+
+    .mission-text-container {
+        padding-left: 100px;
+    }
+
+    .mission-text-container p {
+        font-size: 30px;
+    }
+
+    .mission-text-container h1 {
+        width: 350px;
+    }
+
+    #mission img {
+       position: relative;
+       right: 50px;
+       bottom: 50px;
+    }
+    
+  }
+
+  @media only screen and (max-width:1024px) {
+
+    .mission-text-container {
+        padding-left:200px;   
+    }
+    
+
+  }

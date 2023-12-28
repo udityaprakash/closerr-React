@@ -131,7 +131,7 @@ const Contact = () => {
     <ContactSection id="contact">
       <Title>Get in touch</Title>
       {/* <Text>Lorem ipsum dolor sit amet, consectetur adipisicing.</Text> */}
-      <Icons>
+      {/* <Icons>
         <a href="https://www.facebook.com/">
           {" "}
           <img src={Facebook} alt="Facebook" />
@@ -145,7 +145,7 @@ const Contact = () => {
         <a href="https://www.instagram.com/">
           <img src={Instagram} alt="Instagram" />
         </a>
-      </Icons>
+      </Icons> */}
       <Form>
         <Row>
           <input name="name" type="text" placeholder="Name" />
