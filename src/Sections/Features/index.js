@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import lady from "../../assets/lady.jpeg";
+// import lady from "../../assets/lady.jpeg";
 import "./styles.css";
 import AOS from "aos";
 // import NavigationIcon from '@mui/icons-material/Navigation';
@@ -18,7 +18,7 @@ const Services = () => {
         <div className="features-box">
           <div className="features-image">
             <div data-aos="zoom-in-down">
-              <img src={lady} alt="Lady" />
+              <img src="https://st2.depositphotos.com/4242631/6430/v/450/depositphotos_64302369-stock-illustration-map-icon-with-pin-pointer.jpg" alt="Lady" />
             </div>
           </div>
           <div className="features-text">

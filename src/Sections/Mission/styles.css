@@ -69,8 +69,7 @@
         position: absolute;
         top:350px;
         right: 40px;
-        /* display: none; */
-        /* margin: 150px 0 0 100px; */
+       
     }
   }
 
@@ -117,12 +116,3 @@
     }
     
   }
-/* 
-  @media only screen and (max-width:1024px) {
-
-    .mission-text-container {
-        padding-left:200px;   
-    }
-    
-
-  } */
