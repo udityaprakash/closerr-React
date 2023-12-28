@@ -5,6 +5,7 @@ import "./styles.css";
 import logo from "../../assets/logo.jpeg";
 import { AiOutlineMenu } from "react-icons/ai";
 import { AiOutlineClose } from "react-icons/ai";
+import download from "../../assets/CLOSER (1).pdf"
 
 const Header = () => {
   // const [click, setClick] = useState(false);
@@ -85,6 +86,7 @@ const Header = () => {
         <a href="#contact" onClick={(e) => scrollUp("contact", e)}>
           Contact Us
         </a>
+        <a href={download} download="Closer">Download</a>
       </div>
 
       <div className="mobileMenu" ref={mobMenu}>
@@ -102,6 +104,9 @@ const Header = () => {
         </a>
         <a href="#contact" onClick={(e) => scrollUp("contact", e)}>
           Contact Us
+        </a>
+        <a>
+          Download PDF
         </a>
       </div>
 
