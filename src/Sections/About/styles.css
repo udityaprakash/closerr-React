@@ -80,7 +80,6 @@ section#about {
 
  .text {
     font-family: "Mulish"; 
-    /* font-size: large; */
     font-weight: 300;
     font-size:30px;
 }
@@ -116,28 +115,8 @@ section#about {
       flex-direction: column;
     }
   }
-  
-
-  /* div.rocket {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    width: 40%;
-    padding-bottom: 5rem;
-    animation: move 2.5s ease infinite;
-  } */
-  
-
-  /* @media only screen and (max-width: 40em) {
-    div.rocket {
-      width: 50vw;
-      padding-bottom: 0;
-    }
-  }
-   */
  
   h4.text {
-    /* font-size: calc(0 + 0.2vw); */
     font-size: 23px;
     line-height: 1.5;
     color: var(--nav2);
